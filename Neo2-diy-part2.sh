@@ -29,6 +29,7 @@ sed -i 's/192.168.1.1/192.168.5.18/g' package/base-files/files/bin/config_genera
 #sed -i "s|DISTRIB_REVISION='.*'|DISTRIB_REVISION='R$(date +%Y.%m.%d)'|g" package/lean/default-settings/files/zzz-default-settings
 
 #Apply the patches
+mkdir $GITHUB_WORKSPACE/openwrt/target/linux/sunxi/patches-5.4/
 cp $GITHUB_WORKSPACE/499-neo2-enable-i2c.patch $GITHUB_WORKSPACE/openwrt/target/linux/sunxi/patches-5.4/
 
 
